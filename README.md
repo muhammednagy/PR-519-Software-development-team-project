@@ -8,8 +8,8 @@
 The project is going to be a project that displays movies ratings and let's people rate and review movies.
 
 ## Tech stack - mostlikely will change -
-Go & Postgres on the backend 
-Vue.js on the frontend
+Ruby on rails & Postgres on the backend 
+templating on the frontend
 
 ## Main milestone
 1. users can see list of movies
