@@ -12,10 +12,14 @@ Ruby on rails & Postgres on the backend
 templating on the frontend
 
 ## Main milestone
-1. users can see list of movies
-2. users can give stars rating to movies
-3. users can login/signup
-4. users can write comments/reviews about movies
+1. users can see list of movies - done - 
+2. users can give stars rating to movies - done - 
+3. users can login/signup - done - 
+4. users can write comments/reviews about movies - done -
 
 
 ## Trello link https://trello.com/b/PTk05QpN/uni-project
+
+
+## running the app
+to run the app please make sure you have postgres installed locally first.
