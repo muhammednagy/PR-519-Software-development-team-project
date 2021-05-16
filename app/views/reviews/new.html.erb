@@ -2,7 +2,7 @@
 <div class="login-form">
 <h1>New Review</h1>
 
-<%= render 'form', review: @review %>
+<%= render 'form', review: @review, url: "/movies/#{@movie.id}/reviews" %>
 
 <%= link_to 'Back', movie_path(@movie) %>
 </div>
