@@ -1,8 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<div class="container p-3 my-3 border">
 <h1>Movies</h1>
+</div>
 
-<table>
+<div class="container p-3 my-3 border">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Title</th>
@@ -10,8 +13,8 @@
       <th>Movie length</th>
       <th>Director</th>
       <th>Rating</th>
-      <th>image</th>
-      <th colspan="3"></th>
+      <th>Image</th>
+      <th colspan="3" style="text-align: center">Actions</th>
     </tr>
   </thead>
 
@@ -23,7 +26,7 @@
         <td><%= movie.movie_length %></td>
         <td><%= movie.director %></td>
         <td><%= movie.rating %></td>
-        <td><%= image_tag(movie.image)  %></td>
+        <td style="width: 20px; height: 20px"><%= image_tag(movie.image) %></td>
         <td><%= link_to 'Show', movie %></td>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
         <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -32,6 +35,12 @@
   </tbody>
 </table>
 
+
 <br>
 
-<%= link_to 'New Movie', new_movie_path %>
+<%= link_to 'New Movie',new_movie_path, class:"btn btn-primary" %>
+</div>
+
+<style>
+
+</style>
