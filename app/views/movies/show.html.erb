@@ -31,18 +31,29 @@
           <%= link_to "Write a Review", new_movie_review_path(@movie) %>
         </div>
       </div>
-      <div class="col-md-7 col-md-offset-1">
+      <div class="modal-newsletter">
         <h1 class="review_title"><%= @movie.title %></h1>
+        <div class="modal-header">
         <p><%= @movie.description %></p>
-
+        </div>
         <% if @reviews.blank? %>
           <h3>No reviews just yet, would you like to add the first!</h3>
-          <%= link_to "Write Review", new_movie_review_path(@movie), class: "btn btn-danger" %>
+          <%= link_to "Write Review", new_movie_review_path(@movie), class: "btn btn-primary" %>
         <% else %>
           <% @reviews.each do |review| %>
-            <div class="reviews">
-              <p><%= review.rating %></p>
-              <p><%= review.comment %></p>
+            <div class="container p-3 my-3 border">
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Rating</th>
+                  <th>Comment</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <td><%= review.rating %></td>
+                  <td><%= review.comment %></td>
+                </tbody>
+              </table>
             </div>
           <% end %>
         <% end %>

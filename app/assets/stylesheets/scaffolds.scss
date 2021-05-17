@@ -21,7 +21,7 @@ a:visited {
 
 a:hover {
   color: #fff;
-  background-color: rgba(196, 22, 22, 0.55); }
+  background-color: rgb(255, 255, 255); }
 
 th {
   padding-bottom: 5px; }
@@ -98,6 +98,44 @@ label {
 .table.table th {
   font-size: 19px;
 }
+
+.btn:visited{
+  color: #fdfdfd;
+}
+
+.modal-newsletter {
+  color: #000000;
+  width: 625px;
+  font-size: 20px;
+  margin: 30px auto;
+}
+.modal-newsletter .modal-content {
+  padding: 30px;
+  border-radius: 0;
+  border: none;
+}
+.modal-newsletter .modal-header {
+  border-bottom: none;
+  position: relative;
+  border-radius: 0;
+}
+.modal-newsletter h4 {
+  color: #000;
+  font-size: 30px;
+  margin: 0;
+  font-weight: bold;
+}
+
+
+.modal-newsletter .icon-box {
+  color: #7265ea;
+  display: inline-block;
+  z-index: 9;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
 
 
 @import "bootstrap";
