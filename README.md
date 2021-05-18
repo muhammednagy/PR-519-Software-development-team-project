@@ -7,7 +7,7 @@
 ## Project Description
 The project is going to be a project that displays movies ratings and let's people rate and review movies.
 
-## Tech stack - mostlikely will change -
+## Tech stack 
 Ruby on rails & Postgres on the backend 
 templating on the frontend
 
