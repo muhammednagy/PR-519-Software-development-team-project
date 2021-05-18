@@ -22,4 +22,13 @@ templating on the frontend
 
 
 ## running the app
-to run the app please make sure you have postgres installed locally first.
+to run the app please make sure you have postgreSQL installed locally first.
+
+please follow instructions here on installing ruby and rails https://gorails.com/setup/ubuntu/18.04
+please install ruby 3.0.0 then go the project directory and write `bundle i`
+for postgres DB username please specify it in environment variable `PR_519_TEAM_PROJECT_DATABASE_USERNAME`
+for postgres DB password please specify it in environment variable `PR_519_TEAM_PROJECT_DATABASE_PASSWORD`
+
+last step is to do `rails s` in the project directory
+
+P.S windows is not supported as it's not fully comptaible with rails
